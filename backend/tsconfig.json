@@ -1,0 +1,62 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ES2022",
+        "types": [
+            "node"
+        ],
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "declaration": false,
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "skipLibCheck": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@common/*": [
+                "common/*"
+            ],
+            "@config/*": [
+                "config/*"
+            ],
+            "@constants/*": [
+                "constants/*"
+            ],
+            "@jobs/*": [
+                "jobs/*"
+            ],
+            "@libs/*": [
+                "libs/*"
+            ],
+            "@logger/*": [
+                "logger/*"
+            ],
+            "@middlewares/*": [
+                "middlewares/*"
+            ],
+            "@modules/*": [
+                "modules/*"
+            ],
+            "@queues/*": [
+                "queues/*"
+            ],
+            "@routes/*": [
+                "routes/*"
+            ],
+            "@types/*": [
+                "types/*"
+            ]
+        },
+        "ignoreDeprecations": "6.0"
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
