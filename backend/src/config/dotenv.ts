@@ -21,7 +21,6 @@ const envSchema = z.object({
     QDRANT_API_KEY: z.string().min(1),
     QDRANT_COLLECTION: z.string().default("pdf_chunks"),
     UPLOAD_DIR: z.string().default("uploads"),
-    REDIS_URL: z.string().optional(),
     MAX_FILE_SIZE: z.coerce.number().default(10485760),
     MAX_CHUNKS: z.coerce.number().default(1000),
     TOP_K_RESULTS: z.coerce.number().default(5),
